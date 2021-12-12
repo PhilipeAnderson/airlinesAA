@@ -14,12 +14,12 @@ export function Home(){
     <div className={styles.container}>
       <main className={styles.content}>
         <div className={styles.contentLeft}>
-          <Title />
-          <Subtitle />
+          <Title titlePage="Protocolo Criados"/>
+          <Subtitle infoAbout="Quantidade de protocolos pendentes: 02"/>
         </div>
 
         <div className={styles.contentRight}>
-          <Button />
+          <Button name="Add Protocolo"/>
           <SubMenu />
         </div>
       </main>

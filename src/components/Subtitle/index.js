@@ -1,9 +1,9 @@
 import styles from './styles.module.css';
 
-export function Subtitle(){
+export function Subtitle({ infoAbout }){
   return(
     <p className={styles.subtitle}>
-      Quantidade de Protocolos Pendentes: 04
+      { infoAbout }
     </p>
   )
 }

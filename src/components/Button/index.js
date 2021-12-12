@@ -1,10 +1,10 @@
 import styles from './styles.module.css';
 
 
-export function Button(){
+export function Button({ name }){
   return(
     <button className={styles.button}>
-      Add Protocolo
+      { name }
     </button>
   )
 }

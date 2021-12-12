@@ -13,7 +13,7 @@ import logo from '../../assets/logo.png';
 export function Login(){
 
   // const { user } = React.useContext(AuthContext);
-  //console.log(user)
+  // console.log(user)
 
   const navigate = useNavigate();
 
