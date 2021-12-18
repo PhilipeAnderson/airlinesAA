@@ -43,15 +43,15 @@ export function Login(){
         className={styles.GoogleLogin}
       />
 
-      { isLoggedIn ? ( navigate('/home')) : (' ') }
+      {/* { isLoggedIn ? ( navigate('/home')) : (' ') } */}
 
-       {/* {isLoggedIn ?
+       {isLoggedIn ?
 				(<div>
           <img src={profilePic} alt="Foto do Usuário" />
           <p>Name: {name}</p>
           <p>Email: {email}</p>
 				</div>
-        ) : ( '' )};  */}
+        ) : ( '' )}; 
 
       {/* <AuthContext name={name} email={email} photo={profilePic} /> */}
 
