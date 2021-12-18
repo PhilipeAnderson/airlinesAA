@@ -3,6 +3,7 @@ import styles from './styles.module.css';
 import { Header } from '../../components/Header';
 import { Title } from '../../components/Title';
 import { ButtonLink } from '../../components/ButtonLink';
+import { Protocol } from '../../components/Protocol';
 
 export function AddProtocolo(){
   return(
@@ -18,6 +19,7 @@ export function AddProtocolo(){
             <ButtonLink name="Inserir" link="/home" />
           </div>
         </main>
+        <Protocol />
       </div>
     </>
   )
