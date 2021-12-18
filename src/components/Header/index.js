@@ -11,10 +11,13 @@ export function Header({ name, photo }){
           
           <div>
             <p>Bem Vindo</p>
-            <p>{ name }</p>
+            <p>{ sessionStorage.name }</p>
           </div>
-
-          <img className={styles.picUser} src={ photo } alt="Imagem do User" />
+          <div>
+            <a href="/profile">
+              <img className={styles.picUser} src={ sessionStorage.photo } alt="Imagem do User" />
+            </a>
+          </div>
         </div>
     </header>
   )

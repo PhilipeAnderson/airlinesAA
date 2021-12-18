@@ -31,6 +31,16 @@ export function Login(){
 		setIsLoggedIn(true)
 	};
 
+  const Login = () => {
+    sessionStorage.setItem('name', name)
+    sessionStorage.setItem('email', email)
+    sessionStorage.setItem('photo', profilePic)
+    navigate('/home')
+
+  }
+
+
+
 
   return(
     <div className={styles.container}>
@@ -43,15 +53,18 @@ export function Login(){
         className={styles.GoogleLogin}
       />
 
-      {/* { isLoggedIn ? ( navigate('/home')) : (' ') } */}
+      { isLoggedIn ? 
+        Login() : (' ') 
+      }
+        
 
-       {isLoggedIn ?
+       {/* {isLoggedIn ? 
 				(<div>
           <img src={profilePic} alt="Foto do Usuário" />
           <p>Name: {name}</p>
           <p>Email: {email}</p>
 				</div>
-        ) : ( '' )}; 
+        ) : ( '' )};  */}
 
       {/* <AuthContext name={name} email={email} photo={profilePic} /> */}
 
