@@ -1,5 +1,5 @@
 .container{
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: 'priorityOne priorityTwo priorityThree'

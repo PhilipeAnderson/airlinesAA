@@ -1,0 +1,7 @@
+.greenLine{
+  display: flex;
+  width: 1200px;
+  height: 1px;
+  border: 1px solid greenyellow;
+  margin: 0 auto;
+}

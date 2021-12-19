@@ -1,18 +1,17 @@
-
-import styles from './styles.module.css'
 import { HeaderProtocol } from './HeaderProtocol'
 import { OrderOfServiceProtocol } from './OrderOfServiceProtocol'
+import { WorkBulletin } from './WorkBulletin'
 
+import styles from './styles.module.css'
+import { GreenLine } from '../GreenLine'
 
 export function Protocol(){
   return(
     <div className={styles.container}>
       <HeaderProtocol />
       <OrderOfServiceProtocol />
-      
-      <div>
-        <h2>Boletim diário da Obra</h2>
-      </div>
+      <GreenLine />
+      <WorkBulletin />
       <div>
         <h2>Dados do Levantamento</h2>
       </div>

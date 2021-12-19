@@ -1,4 +1,4 @@
-import { CalendarDate } from '../Calendar';
+import { CalendarDate } from '../../Calendar';
 import styles from './styles.module.css';
 
 
@@ -30,7 +30,6 @@ export function OrderOfServiceProtocol(){
 
 
       <div className={styles.priorityTwo}>
-
         <div className={styles.firstLine}>
           <div className={styles.firstLineColumnOne}>
             <label htmlFor="projetistacopel">Projetista Copel: </label><br />
@@ -67,9 +66,9 @@ export function OrderOfServiceProtocol(){
         <div className={styles.forthLine}>
           <label htmlFor="descricao">Descrição: </label><br />
           <textarea name="descricao" id="" cols="70" rows="6"></textarea>
-        </div>
-        
+        </div> 
       </div>
+      
       <div className={styles.priorityThree}>
         <label htmlFor="calendar">Data Limite: </label><br />
         <CalendarDate />
