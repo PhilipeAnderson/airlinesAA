@@ -1,0 +1,41 @@
+.container{
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 'priorityOne priorityTwo priorityThree priorityFour';
+}
+
+.container input{
+  width: 90%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #8b8b8b
+}
+
+.container label{
+  font-size: 1.3em;
+}
+
+.nameSession{
+  color: var(--title);
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.firstColumn{
+  grid-area: priorityOne;
+}
+
+.secondColumn{
+  grid-area: priorityTwo;
+}
+
+.thirdColumn{
+  grid-area: priorityThree;
+}
+
+.fourthColumn{
+  grid-area: priorityFour;
+}

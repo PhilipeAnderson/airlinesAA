@@ -9,6 +9,7 @@
   --contrast: #FFA500;
   --element: #3E3B47;
   --fontDark: #000000;
+  --disabled: #BA6767;
 }
 
 * {
@@ -50,4 +51,11 @@ cursor: pointer;
 button:disabled{
 opacity: 0.6;
 cursor: not-allowed;
+background-color: var(--disabled)
+}
+
+input:disabled{
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: #BA6767
 }

@@ -1,6 +1,7 @@
 import { HeaderProtocol } from './HeaderProtocol'
 import { OrderOfServiceProtocol } from './OrderOfServiceProtocol'
-import { WorkBulletin } from './WorkBulletin'
+import { WorkBulletinProtocol } from './WorkBulletinProtocol'
+import { SurveyDataProtocol } from './SurveyDataProtocol'
 
 import styles from './styles.module.css'
 import { GreenLine } from '../GreenLine'
@@ -11,10 +12,9 @@ export function Protocol(){
       <HeaderProtocol />
       <OrderOfServiceProtocol />
       <GreenLine />
-      <WorkBulletin />
-      <div>
-        <h2>Dados do Levantamento</h2>
-      </div>
+      <WorkBulletinProtocol />
+      <GreenLine />
+      <SurveyDataProtocol />
       <footer>
         <h2>Ocorrências Da Obra</h2>
       </footer>
