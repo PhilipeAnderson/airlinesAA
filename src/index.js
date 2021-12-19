@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 //import { createServer } from 'miragejs';
 import App from './App';
 import { AuthProvider } from './provider/auth';
+import 'react-calendar/dist/Calendar.css'
 
 // createServer({
 //   routes(){

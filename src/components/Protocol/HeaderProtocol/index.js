@@ -27,7 +27,7 @@ export function HeaderProtocol(){
 
       <div className={styles.faltam}>
         <AiOutlineClockCircle font-size="21px" color="orange" />
-        <p className={styles.paragraph}>Faltam 21 Dias</p>
+        <p className={styles.paragraph}>Faltam -- Dias</p>
       </div>
 
     </div>

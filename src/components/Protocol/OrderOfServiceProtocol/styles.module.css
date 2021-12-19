@@ -19,12 +19,15 @@
 
 .priorityOne{
   grid-area: priorityOne;
+}
 
+.priorityOne input{
+  width: 92%
 }
 
 .priorityTwo{
   grid-area: priorityTwo;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .firstLine{
@@ -74,15 +77,9 @@
   background-color: #8b8b8b
 }
 
-
-
 .priorityThree{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 200px;
+  margin-left: 60px;
   grid-area: priorityThree;
-  background-color: green;
 }
 
 

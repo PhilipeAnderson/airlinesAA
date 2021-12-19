@@ -9,9 +9,7 @@ export function Protocol(){
     <div className={styles.container}>
       <HeaderProtocol />
       <OrderOfServiceProtocol />
-      <main>
-        <h2>Ordem de Serviço</h2>
-      </main>
+      
       <div>
         <h2>Boletim diário da Obra</h2>
       </div>

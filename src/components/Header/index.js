@@ -2,13 +2,16 @@ import styles from './styles.module.css';
 import logoImg from '../../assets/logo.png';
 
 
-export function Header({ name, photo }){
+export function Header(){
 
   return(
     <header className={styles.container}>
-      <img className={styles.logo} src={ logoImg } alt="Logo da Empresa" />
-        <div className={styles.content}>
-          
+
+      <div className={styles.content}>
+        
+        <img className={styles.logo} src={ logoImg } alt="Logo da Empresa" />
+
+        <div className={styles.welcome}>
           <div>
             <p>Bem Vindo</p>
             <p>{ sessionStorage.name }</p>
@@ -19,6 +22,9 @@ export function Header({ name, photo }){
             </a>
           </div>
         </div>
+
+      </div>
+
     </header>
   )
 }

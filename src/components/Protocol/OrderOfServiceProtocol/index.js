@@ -1,3 +1,4 @@
+import { CalendarDate } from '../Calendar';
 import styles from './styles.module.css';
 
 
@@ -70,7 +71,8 @@ export function OrderOfServiceProtocol(){
         
       </div>
       <div className={styles.priorityThree}>
-
+        <label htmlFor="calendar">Data Limite: </label><br />
+        <CalendarDate />
       </div>
     </div>
   )

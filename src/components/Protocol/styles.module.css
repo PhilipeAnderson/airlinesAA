@@ -1,5 +1,5 @@
 .container{
-  max-width: 1200px;
+  max-width: 1400px;
   height: 100vh;
   color: var(--font);
   line-height: 32px;
@@ -9,59 +9,4 @@
   border: none;
   border-radius: 5px;
   background: var(--element);
-}
-
-.header{
-  margin-bottom: 50px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: 'priorityOne priorityTwo priorityThree'
-}
-
-.priorityOne{
-  grid-area: priorityOne;
-}
-
-.priorityTwo{
-  margin-left: 70px;
-  grid-area: priorityTwo;
-}
-
-.priorityThree{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 200px;
-  grid-area: priorityThree;
-}
-
-.priorityThree img{
-  width: 25px;
-  height: 25px;
-  margin-left: 5px;
-}
-
-.aberta{
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
-
-.aberta img{
-  width: 25px;
-}
-
-.faltam{
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
-
-.faltam img{
-  width: 25px;
-}
-
-.paragraph{
-  margin-left: 10px;
-  margin-right: 30px;
 }
