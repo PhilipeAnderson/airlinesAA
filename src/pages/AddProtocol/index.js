@@ -5,7 +5,7 @@ import { Title } from '../../components/Title';
 import { ButtonLink } from '../../components/ButtonLink';
 import { Protocol } from '../../components/Protocol';
 
-export function AddProtocolo(){
+export function AddProtocol(){
   return(
     <>
     <Header />
@@ -14,7 +14,7 @@ export function AddProtocolo(){
           <div className={styles.contentLeft}>
             <Title titlePage="Novo Protocolo"/>
           </div>
-          <div className="contentRight">
+          <div className={styles.contentRight}>
             <ButtonLink name="Voltar" link="/home" />
             <ButtonLink name="Inserir" link="/home" />
           </div>

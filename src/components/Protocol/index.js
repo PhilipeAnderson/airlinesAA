@@ -1,3 +1,5 @@
+
+
 import { HeaderProtocol } from './HeaderProtocol'
 import { OrderOfServiceProtocol } from './OrderOfServiceProtocol'
 import { WorkBulletinProtocol } from './WorkBulletinProtocol'
@@ -8,6 +10,13 @@ import styles from './styles.module.css'
 import { GreenLine } from '../GreenLine'
 
 export function Protocol(){
+
+
+
+  function getTextArea(project){
+    console.log(project)
+  }
+
   return(
     <div className={styles.container}>
       <HeaderProtocol />
@@ -17,8 +26,7 @@ export function Protocol(){
       <GreenLine />
       <SurveyDataProtocol />
       <GreenLine />
-      <OccurencesOfTheWorkProtocol />
-
+      <OccurencesOfTheWorkProtocol handleSubmit={ getTextArea }/>
     </div>
   )
 }

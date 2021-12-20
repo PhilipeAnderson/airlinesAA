@@ -8,6 +8,16 @@
 
 .content{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  max-width: 1330px;
+  margin: 0 auto;
+}
+
+.contentLeft{
+  max-width: 100%;
+}
+
+.contentRight{
+  max-width: 100%;
 }

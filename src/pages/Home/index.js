@@ -19,7 +19,7 @@ export function Home(){
         </div>
 
         <div className={styles.contentRight}>
-          <ButtonLink name="Add Protocolo" link="/addprotocolo"/>
+          <ButtonLink name="Add Protocolo" link="/addprotocol"/>
           <SubMenu />
         </div>
       </main>
