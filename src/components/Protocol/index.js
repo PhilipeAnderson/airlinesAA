@@ -13,7 +13,7 @@ export function Protocol(){
 
 
 
-  function getTextArea(project){
+  function handleTextArea(project){
     console.log(project)
   }
 
@@ -26,7 +26,7 @@ export function Protocol(){
       <GreenLine />
       <SurveyDataProtocol />
       <GreenLine />
-      <OccurencesOfTheWorkProtocol handleSubmit={ getTextArea }/>
+      <OccurencesOfTheWorkProtocol handleSubmit={ handleTextArea }/>
     </div>
   )
 }

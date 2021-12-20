@@ -4,12 +4,15 @@ import styles from './styles.module.css';
 
 export function OccurencesOfTheWorkProtocol({ handleSubmit }){
 
-  const [ formData, setFormData ] = useState({})
+  const [textArea, setTextArea] = useState({key: 'default'})
 
   function submit(e){
     e.preventDefault()
-    setFormData(e.target.value)
-    handleSubmit(formData)
+    const formData = new FormData(e.target.value)
+    const data = Object.fromEntries(formData)
+    setTextArea(e.target.value)
+    handleSubmit(data)
+    console.log(data)
   }
 
   return(
@@ -23,8 +26,8 @@ export function OccurencesOfTheWorkProtocol({ handleSubmit }){
             cols="30" 
             rows="10"
             onChange={ handleSubmit }
-            value={ formData.ocorrenciasdaobra || '' }
-          >{formData}
+            value={ textArea.ocorrenciasdaobra || '' }
+          >
           </textarea>
         </form>
       </div>
