@@ -2,6 +2,7 @@ import { HeaderProtocol } from './HeaderProtocol'
 import { OrderOfServiceProtocol } from './OrderOfServiceProtocol'
 import { WorkBulletinProtocol } from './WorkBulletinProtocol'
 import { SurveyDataProtocol } from './SurveyDataProtocol'
+import { OccurencesOfTheWorkProtocol } from './OccurrencesOfTheWorkProtocol'
 
 import styles from './styles.module.css'
 import { GreenLine } from '../GreenLine'
@@ -15,9 +16,9 @@ export function Protocol(){
       <WorkBulletinProtocol />
       <GreenLine />
       <SurveyDataProtocol />
-      <footer>
-        <h2>Ocorrências Da Obra</h2>
-      </footer>
+      <GreenLine />
+      <OccurencesOfTheWorkProtocol />
+
     </div>
   )
 }
