@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 
 export function OccurencesOfTheWorkProtocol({ handleSubmit }){
 
-  const [textArea, setTextArea] = useState({key: 'default'})
+  const [textArea, setTextArea] = useState({valueTextArea: 'default'})
 
   function submit(e){
     e.preventDefault()
@@ -26,7 +26,7 @@ export function OccurencesOfTheWorkProtocol({ handleSubmit }){
             cols="30" 
             rows="10"
             onChange={ handleSubmit }
-            value={ textArea.ocorrenciasdaobra || '' }
+            value={ textArea || '' }
           >
           </textarea>
         </form>

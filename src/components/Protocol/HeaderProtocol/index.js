@@ -20,13 +20,13 @@ export function HeaderProtocol(){
     <div className={styles.priorityTwo}>
 
       <div className={styles.aberta}>
-        <AiOutlineInsertRowAbove font-size="21px" color="orange" />
+        <AiOutlineInsertRowAbove fontSize="21px" color="orange" />
         <p className={styles.paragraph}>Aberta</p>
-        <IoClose font-size="24px" color="red" />
+        <IoClose fontSize="24px" color="red" />
       </div>
 
       <div className={styles.faltam}>
-        <AiOutlineClockCircle font-size="21px" color="orange" />
+        <AiOutlineClockCircle fontSize="21px" color="orange" />
         <p className={styles.paragraph}>Faltam -- Dias</p>
       </div>
 
@@ -35,7 +35,7 @@ export function HeaderProtocol(){
 
     <div className={styles.priorityThree}>
       <p className={styles.paragraph}>Levantamento: </p>
-      <AiFillCloseCircle font-size="21px" color="red"/>
+      <AiFillCloseCircle fontSize="21px" color="red"/>
     </div>
 
   </header>

@@ -13,8 +13,8 @@ export function Protocol(){
 
 
 
-  function handleTextArea(project){
-    console.log(project)
+  function handleTextArea(valueTextArea){
+    console.log(valueTextArea)
   }
 
   return(
