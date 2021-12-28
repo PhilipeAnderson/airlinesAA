@@ -22,13 +22,15 @@ export function Protocol(){
   return(
     <div className={styles.container}>
       <HeaderProtocol />
-      <OrderOfServiceProtocol />
-      <GreenLine />
-      <WorkBulletinProtocol handleSubmit={ handleInputChange } />
-      <GreenLine />
-      <SurveyDataProtocol />
-      <GreenLine />
-      <OccurencesOfTheWorkProtocol handleSubmit={ handleInputChange }/>
+      <form>
+        <OrderOfServiceProtocol handleSubmit={ handleInputChange }/>
+        <GreenLine />
+        <WorkBulletinProtocol handleSubmit={ handleInputChange } />
+        <GreenLine />
+        <SurveyDataProtocol />
+        <GreenLine />
+        <OccurencesOfTheWorkProtocol handleSubmit={ handleInputChange }/>
+      </form>
     </div>
   )
 }
