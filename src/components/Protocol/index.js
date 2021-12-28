@@ -1,4 +1,4 @@
-
+import { useState } from 'react';
 
 import { HeaderProtocol } from './HeaderProtocol'
 import { OrderOfServiceProtocol } from './OrderOfServiceProtocol'
@@ -11,10 +11,12 @@ import { GreenLine } from '../GreenLine'
 
 export function Protocol(){
 
+  const [formValues, setFormValues] = useState({})
 
-
-  function handleTextArea(valueTextArea){
-    console.log(valueTextArea)
+  function handleInputChange(e){
+    const { name, value } = e.target
+    setFormValues({...formValues, [name]: value})
+    console.log(formValues)
   }
 
   return(
@@ -22,11 +24,11 @@ export function Protocol(){
       <HeaderProtocol />
       <OrderOfServiceProtocol />
       <GreenLine />
-      <WorkBulletinProtocol />
+      <WorkBulletinProtocol handleSubmit={ handleInputChange } />
       <GreenLine />
       <SurveyDataProtocol />
       <GreenLine />
-      <OccurencesOfTheWorkProtocol handleSubmit={ handleTextArea }/>
+      <OccurencesOfTheWorkProtocol handleSubmit={ handleInputChange }/>
     </div>
   )
 }
