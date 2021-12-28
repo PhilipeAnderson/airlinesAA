@@ -1,23 +1,32 @@
 import { useState } from 'react';
 
-import { HeaderProtocol } from './HeaderProtocol'
-import { OrderOfServiceProtocol } from './OrderOfServiceProtocol'
-import { WorkBulletinProtocol } from './WorkBulletinProtocol'
-import { SurveyDataProtocol } from './SurveyDataProtocol'
-import { OccurencesOfTheWorkProtocol } from './OccurrencesOfTheWorkProtocol'
+import { HeaderProtocol } from './HeaderProtocol';
+import { OrderOfServiceProtocol } from './OrderOfServiceProtocol';
+import { WorkBulletinProtocol } from './WorkBulletinProtocol';
+import { SurveyDataProtocol } from './SurveyDataProtocol';
+import { OccurencesOfTheWorkProtocol } from './OccurrencesOfTheWorkProtocol';
 
-import styles from './styles.module.css'
-import { GreenLine } from '../GreenLine'
+import styles from './styles.module.css';
+import { GreenLine } from '../GreenLine';
 
 export function Protocol(){
 
-  const [formValues, setFormValues] = useState({})
+  const [formValues, setFormValues] = useState({});
 
   function handleInputChange(e){
-    const { name, value } = e.target
-    setFormValues({...formValues, [name]: value})
-    console.log(formValues)
-  }
+    const { name, value, type, checked } = e.target;
+    const isCheckbox = type === 'checkbox';
+
+    const data = formValues[name] || {};
+    if(isCheckbox) {
+      data[value] = checked;
+    }
+
+    const newValue = isCheckbox ? data : value
+
+    setFormValues({...formValues, [name]: newValue});
+    console.log(formValues);
+  };
 
   return(
     <div className={styles.container}>
@@ -27,10 +36,10 @@ export function Protocol(){
         <GreenLine />
         <WorkBulletinProtocol handleSubmit={ handleInputChange } />
         <GreenLine />
-        <SurveyDataProtocol />
+        <SurveyDataProtocol handleSubmit={ handleInputChange } />
         <GreenLine />
-        <OccurencesOfTheWorkProtocol handleSubmit={ handleInputChange }/>
+        <OccurencesOfTheWorkProtocol handleSubmit={ handleInputChange } />
       </form>
     </div>
   )
-}
+};
