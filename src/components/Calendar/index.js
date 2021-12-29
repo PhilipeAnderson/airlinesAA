@@ -4,11 +4,18 @@ import Calendar from 'react-calendar';
 
 export function CalendarDate(){
 
-  const [value, onChange] = useState(new Date())
+  const [date, setDate] = useState(new Date())
+
+  const returnDate = date => {
+    setDate(date)
+  }
 
   return(
     <div>
-      <Calendar onChange={onChange} value={value} />
+      <Calendar onChange={ returnDate } value={ date }/>
+      {console.log(date)}
+      {date.toString()}
+
     </div>
   )
 }
