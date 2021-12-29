@@ -12,8 +12,8 @@ import { GreenLine } from '../GreenLine';
 export function Protocol(){
 
   const [formValues, setFormValues] = useState({});
-
-  function handleInputChange(e){
+  
+  const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
     const isCheckbox = type === 'checkbox';
 
@@ -31,15 +31,13 @@ export function Protocol(){
   return(
     <div className={styles.container}>
       <HeaderProtocol />
-      <form>
-        <OrderOfServiceProtocol handleSubmit={ handleInputChange }/>
-        <GreenLine />
-        <WorkBulletinProtocol handleSubmit={ handleInputChange } />
-        <GreenLine />
-        <SurveyDataProtocol handleSubmit={ handleInputChange } />
-        <GreenLine />
-        <OccurencesOfTheWorkProtocol handleSubmit={ handleInputChange } />
-      </form>
+      <OrderOfServiceProtocol handleSubmit={ handleInputChange }/>
+      <GreenLine />
+      <WorkBulletinProtocol handleSubmit={ handleInputChange } />
+      <GreenLine />
+      <SurveyDataProtocol handleSubmit={ handleInputChange } />
+      <GreenLine />
+      <OccurencesOfTheWorkProtocol handleSubmit={ handleInputChange } />
     </div>
   )
 };
