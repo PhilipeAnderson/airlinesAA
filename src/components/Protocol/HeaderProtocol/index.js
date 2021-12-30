@@ -1,19 +1,24 @@
-import styles from './styles.module.css'
-
 import { IoClose } from 'react-icons/io5';
-import { AiOutlineInsertRowAbove } from 'react-icons/ai'
-import { AiOutlineClockCircle } from 'react-icons/ai'
-import { AiFillCloseCircle } from 'react-icons/ai'
+import { AiOutlineInsertRowAbove } from 'react-icons/ai';
+import { AiOutlineClockCircle } from 'react-icons/ai';
+import { AiFillCloseCircle } from 'react-icons/ai';
 //import { AiFillCheckCircle } from 'react-icons/ai'
 
+import styles from './styles.module.css'
 
 export function HeaderProtocol(){
+
+  const created = new Date()
+  const formatter = Intl.DateTimeFormat('pt-BR', {
+    dateStyle: "long"
+  })
+
   return(
     <header className={styles.container}>
 
     <div className={styles.priorityOne}>
-      <p>Thomas Cordeiro</p>
-      <p>Data de Criação: Outubro de 2021</p>
+      <p>{ sessionStorage.name }</p>
+      <p>Data de Criação: || { formatter.format(created).toString() }</p>
     </div>
 
 
@@ -27,7 +32,7 @@ export function HeaderProtocol(){
 
       <div className={styles.faltam}>
         <AiOutlineClockCircle fontSize="21px" color="orange" />
-        <p className={styles.paragraph}>Faltam -- Dias</p>
+        <p className={styles.paragraph}>Faltam ** Dias</p>
       </div>
 
     </div>

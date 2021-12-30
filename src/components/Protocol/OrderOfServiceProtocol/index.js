@@ -3,6 +3,12 @@ import styles from './styles.module.css';
 
 
 export function OrderOfServiceProtocol({ handleSubmit }){
+
+  const handleDate = (date) => {
+    localStorage.setItem('deadline', date)
+  }
+
+
   return(
     <div className={styles.container}>
       <div className={styles.priorityOne}>
@@ -71,7 +77,7 @@ export function OrderOfServiceProtocol({ handleSubmit }){
       
       <div className={styles.priorityThree}>
         <label htmlFor="calendar">Data Limite: </label><br />
-        <CalendarDate />
+        <CalendarDate getDate={ handleDate }/>
       </div>
     </div>
   )
