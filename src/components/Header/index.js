@@ -13,8 +13,8 @@ export function Header(){
 
         <div className={styles.welcome}>
           <div>
-            <p>Bem Vindo</p>
-            <p>{ sessionStorage.name }</p>
+            <p className={styles.userData}>Bem Vindo</p>
+            <p className={styles.userData}>{ sessionStorage.name }</p>
           </div>
           <div>
             <a href="/profile">

@@ -5,11 +5,15 @@
   --header: #26184B;
   --background: #FFFFFF;
   --fontTitle: #26184B;
-  --fontList: #FFFFFF;
+  --fontList: #0072ac;
   --contrast: #FFA500;
   --element: #3E3B47;
   --fontDark: #000000;
   --disabled: #BA6767;
+
+  --blueAmerican: #0072ac;
+  --redAvianca: #e1363c;
+  --textDefault: #425b68;
 }
 
 * {
@@ -58,4 +62,12 @@ input:disabled{
   opacity: 0.6;
   cursor: not-allowed;
   background-color: #BA6767
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
 }

@@ -1,5 +1,5 @@
 .submenu{
-  color: var(--fontTile);
+  color: var(--textDefault);
   margin-top: 20px;
 }
 
@@ -16,6 +16,11 @@
 }
 
 .submenu ul li a{
+  text-decoration: none;
+  color: var(--textDefault)
+}
+
+.submenu ul li a:visited{
   text-decoration: none;
 }
 
