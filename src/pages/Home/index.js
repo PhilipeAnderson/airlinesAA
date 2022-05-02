@@ -25,6 +25,13 @@ export function Home(){
       </main>
       <List />
       <List />
+      <List />
+      <List />
+      <List />
+      <List />
+      <List />
+      <List />
+      <List />
     </div>
     </>
   )
