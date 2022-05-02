@@ -1,0 +1,35 @@
+.container{
+  max-width: 1650px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 1rem;
+  background: transparent;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1330px;
+  margin: 0 auto;
+}
+
+.contentLeft{
+  max-width: 100%;
+}
+
+.contentRight{
+  max-width: 100%;
+}
+
+.formProtocol{
+    max-width: 1400px;
+    color: var(--font);
+    line-height: 32px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    background: var(--element);
+}
