@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "eslint-config-react-app": "6",
+    "nth-check": "^2.0.1",
     "react": "^18.1.0",
     "react-calendar": "^3.7.0",
     "react-dom": "^18.1.0",
